@@ -10,7 +10,7 @@ public class Dummy {
 
 		// Ask user for number to get sets
 		System.out.print("Enter your integer range (1-255): ");
-		int n = sc.nextInt();
+		int n = sc.nextInt() + 1;
 
 		int setNum = log2(n); // Gets the log base 2 of the number of n and gets the ceiling of it to get the number of sets
 		int setarr[][] = generateSets(setNum); //Generates the sets
@@ -21,7 +21,7 @@ public class Dummy {
 		// Print sets
 			for (int i = 0; i < setNum; i++) { // Looks at each set
 				for (int j = 0; j < setarr[i].length; j++) { //Prints number in set
-					System.out.print(setarr[i][j] + " ");
+					System.out.print(setarr[i][j] + ", ");
 				}
 				System.out.println();
 				System.out.print("Enter your number to see if it's in your set: "); //Asks user if their number is in the set
