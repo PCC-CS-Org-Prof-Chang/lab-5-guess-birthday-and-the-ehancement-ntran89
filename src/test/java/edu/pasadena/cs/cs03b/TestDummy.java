@@ -35,14 +35,14 @@ public class TestDummy {
      // TODO: add your own test cases
     
      // action
-     int[][] iResult2 = Dummy.generateSets(3);
+     int[][] iResult2 = Dummy.generateSets(2);
      // assertion
      assertEquals(set2n, iResult2);
 
      // action
-     int[][] iResult3 = Dummy.generateSets(7);
+     int[][] iResult3 = Dummy.generateSets(3);
      // assertion
      assertEquals(set3n, iResult3);
-     
+
    }
 }
