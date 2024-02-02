@@ -5,6 +5,18 @@ import java.util.Scanner;
 public class Dummy {
 
 	public static void main(String[] args) {
+		int set1n[][] = {
+			{1}, 
+		  };
+		  int set2n[][] = {
+			{1, 3},
+			{2, 3} 
+		  };
+		  int set3n[][] = {
+			{1, 3, 5, 7},
+			{2, 3, 6, 7},
+			{4, 5, 6, 7}
+		  };
 		// TODO: add you logic here
 		Scanner sc = new Scanner(System.in);
 
@@ -30,6 +42,7 @@ public class Dummy {
 				System.out.println(); //Ends the line to seperate the sets
 			}
 			System.out.println(binArrtoDec(binary) + " is your number."); //Prints the decimal number of the binary array
+			sc.close();
 		}
 
 		public static int dummy() {
@@ -78,5 +91,14 @@ public class Dummy {
 			}
 		}
 		return setofSets;
+	}
+
+	public static void printSet(int[][] arr) {
+		for (int i = 0; i < arr.length; i++) {
+			for (int j = 0; j < arr[i].length; j++) {
+				System.out.print(arr[i][j] + ", ");
+			}
+			System.out.println();
+		}
 	}
 }

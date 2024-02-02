@@ -1,5 +1,6 @@
 package edu.pasadena.cs.cs03b;
 
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.DisplayName;
@@ -24,25 +25,25 @@ public class TestDummy {
     int set3n[][] = {
       {1, 3, 5, 7},
       {2, 3, 6, 7},
-      {4, 5 , 6, 7}
+      {4, 5, 6, 7}
     };
 
      // action
      int[][] iResult = Dummy.generateSets(1);
      // assertion
-     assertEquals(set1n, iResult);
+     assertArrayEquals(set1n, iResult);
 
      // TODO: add your own test cases
     
      // action
      int[][] iResult2 = Dummy.generateSets(2);
      // assertion
-     assertEquals(set2n, iResult2);
+     assertArrayEquals(set2n, iResult2);
 
      // action
      int[][] iResult3 = Dummy.generateSets(3);
      // assertion
-     assertEquals(set3n, iResult3);
+     assertArrayEquals(set3n, iResult3);
 
    }
 }
